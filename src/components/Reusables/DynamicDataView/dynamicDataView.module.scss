@@ -1,0 +1,62 @@
+.dataView {
+  width: 100%;
+
+  :global(.p-dataview-grid),
+  :global(.p-dataview-list) {
+    width: 100%;
+  }
+
+  :global(.p-dataview-header) {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0 2px 8px -6px #888;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0; // Removes default gutter spacing
+  padding: 0;
+}
+
+.layoutSwitch {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  height: 2.5rem;
+  justify-content: flex-end;
+  align-items: center;
+
+  input {
+    width: 11vw;
+    font-size: 0.75rem;
+    height: 2rem;
+  }
+
+  .resetBtn {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .listed {
+    justify-content: center;
+    width: 6.5rem;
+    height: 2rem;
+
+  }
+
+  .tagBtn {
+    width: 6rem;
+    height: 2.5rem;
+    padding: 0.25rem;
+    justify-content: center;
+  }
+
+  :global(.p-dataview) button {
+    height: 2rem;
+    width: 2.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.div {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+.card {
+  padding: 2rem 3rem;
+  text-align: center;
+  box-shadow: 0 4px 24px -8px #2196f3;
+  border-radius: 16px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-bottom: 2rem;
+  h2 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+  }
+  p {
+    color: #666;
+    font-size: 1.1rem;
+  }
+}
+
+.button {
+  margin-top: 1rem;
+}

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: azure;
+}
+
+.topNav {
+  height: 5%;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainContent {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5rem; // Creates space between sidebar and outlet
+}
+
+.sidebar {
+  height: 88vh;
+  // background-color: #fff;
+  border-radius: 8px;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.outlet {
+  padding-top: 0.65rem;
+  height: 89vh;
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

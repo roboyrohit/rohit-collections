@@ -1,0 +1,36 @@
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .selection {
+    width: 8.4rem;
+
+    :global(.p-dropdown-label) {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+
+    :global(.p-dropdown-clear-icon) {
+      right: 1.5rem;
+    }
+
+    :global(.p-dropdown-trigger) {
+      width: 2rem;
+    }
+  }
+}
+
+.movieGrid {
+  width: 100%;
+  border-radius: 1rem;
+  // padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-height: 78vh; // adjust as needed
+  overflow-y: scroll; // vertical scroll enabled
+  scrollbar-width: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
