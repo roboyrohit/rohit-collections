@@ -1,0 +1,30 @@
+// coolMenu.scss
+$primary-color: #5c6bc0;
+$hover-color: #3f51b5;
+$text-color: #333;
+
+.logo {
+  border-radius: 0.35rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.menuend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  :global(.p-button-icon) {
+    font-size: 1.5rem;
+  }
+}
+
+.profilename {
+  text-transform: uppercase;
+  padding: 0rem 1rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #6366f1;
+}

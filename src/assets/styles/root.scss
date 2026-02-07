@@ -1,0 +1,45 @@
+.pageTitle {
+  background-color: #fff;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.7rem;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.pageContent {
+  height: 84vh;
+  border-radius: 0.7rem;
+  border-top-left-radius: 0rem;
+  overflow-y: hidden;
+  padding: 0.125rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+}
+
+.p-dataview-emptymessage {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.p-dataview-header {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.p-panelmenu-header-link {
+  padding: 0.5rem 0.75rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.p-card .p-card-content {
+  padding: 0rem;
+}
+
+.active-link {
+  color: blue;
+  font-weight: bold;
+  background-color: aqua;
+}

@@ -1,0 +1,44 @@
+.contactDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+
+    .infoDiv {
+        width: 400px;
+        text-align: center;
+        animation: slideIn 1.2s;
+    }
+
+    table {
+        width: 100%;
+        text-align: justify;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    button {
+        width: 50%;
+        letter-spacing: 1rem;
+        &:hover {
+            width: fit-content;
+            letter-spacing: 0rem;
+            transition: all 1s;
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,148 @@
+:root {
+  --surface-card: #ffffff; /* Light card background */
+  --surface-border: #989898; /* Light grey border */
+  --text-color: #0022ff;
+}
+
+.cardContainer {
+  width: 50%;
+  padding: 0.25rem;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 8px;
+  border-top: 1px solid var(--surface-border);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.thumbnail:hover {
+  animation: neonPulse 1s infinite alternate, animateItem 1s infinite alternate;
+}
+
+@keyframes animateItem {
+  0% {
+    transform: translateX(-5px) rotate(-2.5deg);
+  }
+  50% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(5px) rotate(2.5deg);
+  }
+}
+
+@keyframes neonPulse {
+  to {
+    box-shadow: 0 0 10px #00fffb, 0 0 20px #00fffb;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  flex: 1;
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
+.textDiv {
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+
+  @media screen and (min-width: 640px) {
+    align-items: flex-start;
+  }
+}
+
+.title {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.metaGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.originGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.originText {
+  font-weight: 600;
+}
+
+.actionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  @media screen and (min-width: 640px) {
+    align-items: flex-end;
+  }
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 50%;
+}
+
+.wikiLink {
+  text-decoration: none;
+}
+
+.wikiLink:hover {
+  background-color: antiquewhite;
+  border-radius: 0.5rem;
+}

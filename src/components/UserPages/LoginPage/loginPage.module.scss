@@ -1,0 +1,87 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  :global(.p-card-title),
+  :global(.p-card-subtitle) {
+    text-align: center;
+  }
+
+  .thumbnail {
+    padding: 1rem;
+  }
+}
+
+.loginCard {
+  width: 400px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    width: 100%;
+    margin-inline: auto;
+    margin-block: 0.25rem;
+
+    &:hover {
+      width: fit-content;
+      transition: all 1s;
+    }
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+
+  :global(.p-icon-field),
+  input {
+    width: 100%;
+  }
+
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.inputField {
+  margin-top: 0.5rem;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loginButton {
+  background-color: #007ad9;
+  border: none;
+}
+
+.divider {
+  margin: 0.25rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,116 @@
+:root {
+  --surface-card: #ffffff; /* Light card background */
+  --surface-border: #989898; /* Light grey border */
+  --text-color: #0022ff;
+}
+
+.cardColumn {
+  width: 100%;
+  padding: 0.5rem;
+
+  @media (min-width: 576px) {
+    width: 33.3333%;
+  }
+
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
+}
+
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ratingGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ratingValue {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.centerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.image {
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image:hover {
+  animation: neonPulse 1s infinite alternate, animateItem 1s infinite alternate;
+}
+
+@keyframes animateItem {
+  0% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(10px) rotate(5deg);
+  }
+}
+
+@keyframes neonPulse {
+  to {
+    box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
+  }
+}
+
+.title {
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.bottomRow {
+  margin: 0.25rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+.year {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cartButton {
+  border-radius: 50%;
+}
